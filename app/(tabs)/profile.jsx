@@ -26,13 +26,15 @@ const Profile = () => {
         data={posts}
         keyExtractor={(item) => item.$id}
         renderItem={({ item }) => (
-          <VideoCard
-            title={item.title}
-            thumbnail={item.thumbnail}
-            video={item.video}
-            creator={item.creator.username}
-            avatar={item.creator.avatar}
-          />
+          <>
+            <VideoCard
+              title={item.title}
+              thumbnail={item.thumbnail}
+              video={item.video}
+              creator={item.creator.username}
+              avatar={item.creator.avatar}
+            />
+          </>
         )}
         ListEmptyComponent={() => (
           <EmptyState
@@ -75,7 +77,7 @@ const Profile = () => {
                 containerStyles="mr-10"
               />
               <InfoBox
-                title="1.2k"
+                title="7.5k"
                 subtitle="Followers"
                 titleStyles="text-xl"
               />

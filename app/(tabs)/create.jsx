@@ -97,7 +97,7 @@ const Create = () => {
         <FormField
           title="Video Title"
           value={form.title}
-          placeholder="Give your video a catchy title..."
+          placeholder="Enter Your Title"
           handleChangeText={(e) => setForm({ ...form, title: e })}
           otherStyles="mt-10"
         />
